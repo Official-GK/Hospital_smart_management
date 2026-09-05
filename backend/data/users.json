@@ -1,0 +1,9 @@
+[
+  {
+    "user_id": "mgr01",
+    "full_name": "Dr. Raj Kumar",
+    "password": "Pass@123",
+    "role": "Management",
+    "created_at": "2026-09-04T20:26:16Z"
+  }
+]
