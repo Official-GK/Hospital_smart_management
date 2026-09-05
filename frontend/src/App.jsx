@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -6,7 +6,7 @@ import Users from './pages/Users';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {/* Public */}
         <Route path="/login" element={<Login />} />
@@ -34,6 +34,6 @@ export default function App() {
         <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
